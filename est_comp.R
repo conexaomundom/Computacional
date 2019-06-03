@@ -35,3 +35,16 @@
 
 ##### QUESTÃO 4
 
+##### QUESTÃO 5
+# Não, no R não irá ocorrer nenhum problema se criar um vetor atômico com obejtos
+# de tipos diferentes, como foi visto na questão 3,, como vetor é uma estrutura de
+# dados homogênea ele simplesmente irá converter todos os objetos dentro do vetor
+# para um único tipo sendo ele o tipo mais flexível. (caractere > double > integer > logical)
+
+##### QUESTÃO 6
+# NA é um tipo de obejto retornado, ou quando há valores faltantes, ou quando alguma
+# operação não pode ser realizada como ao querer dividir algum numero por 0, ou 
+# tentar tirar a raiz quadrada de um número negativo, são operações invalidas que
+# retornará a um NA. Já um NaN eu não sei responder, inclusive vou pesquisar.
+# INCLUSIVE pesquisar Inf, e -Inf também vou pesquisar para responder melhor.
+
