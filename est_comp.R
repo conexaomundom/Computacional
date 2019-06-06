@@ -2,13 +2,14 @@
 #
 # Exercicios propostos
 
-##### QUEST?O 1
+# Questao 1 ---------------------------------------------------------------
+
 # O compilador e um interpretador, um compilador eh um programa de
 # computadorou mesmo um grupo de programas que é responsável por traduzir
 # um codigo fonte escrito em uma linguagem compilada a um programa 
 # equivalente do ponto de vista semantico. O compilador traduz o código
 # fonto de uma linguagem de médio/alto nível ára uma linguagem de progrmação
-# de baixo nível. Alguns xompiladores traduzem o código para um formato
+# de baixo nível. Alguns compiladores traduzem o código para um formato
 # intermediário, denominado de bytecode que é um arquivo executável.
 # Já interpretadores são programas de computador que tem a finalidade
 # de ler o código fonte de uma linguagem de programação interpretada e o
@@ -19,13 +20,24 @@
 # Compilado - C
 # Interpretado R.
 
-##### QUEST?O 2
-# 1.Integer, double, charactere, logical.
-# 2.Os principais tipos de dados da linguagem R s?o vetores, listas, data frame, matrizes.
-# 3. 
-# 4.
 
-##### QUEST?O 3
+# Questao 2 ---------------------------------------------------------------
+
+# 1.Integer, double, charactere, logical.
+# 2.Os principais tipos de dados da linguagem R s?o vetores, listas, data frame, arrays e matrizes.
+# 3. Tipo de dado é a especificação de como o dado representado por cadeia
+# de bits é interpretado, refere-se ao conjunto de valores que estes podem assumir
+# ou gerar, incluem os numeros, os valores lógicos e o conjunto de caracteres de impressão, 
+# A eficiencia de um algoritmo qualquer está intimamente relacionada a disposição, 
+# na memoria dos dados que sao tratados pelo programa. Estrutura de dados são formas de 
+# distribuir e relacionar os dados disponiveis, de modo a tornar mais eficientes
+# os algoritmos que manipulam esses dados.
+# 4. Homogêneio <- vetores, matrizes e arrays.
+# Heterogeneo <- listas, data frames.
+
+
+# Questao 3 ---------------------------------------------------------------
+
 # Explicando o porque das sa?das 
 # 1. Como pelo menos em uma das posi??es do vetor ? double, ent?o todas as componentes
 # ser?o impressas em forma de n?meros (double), pois double ? mais flexivel do que inteiro
