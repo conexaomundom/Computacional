@@ -55,9 +55,14 @@
 # para um ?nico tipo de estrutura de dados e como caractere ? o tipo de dado mais flex?vel
 # e as tres letras do alfabetos s?o desse tipo, todo o vetor foi expesso como caracteres.
 
-# 3. Boa quaestion
+# 3. Todos serao convertidos para inteiro.
 
-##### QUEST?O 4
+
+# Questao 4 ---------------------------------------------------------------
+
+# A estrutura de dadosd e x continuará a ser um vetor, pois x <- c(1, c(2, c(3, 4))); x, é
+# o mesmo que x <- c(1,2,3, 4); como criar um vetor normal, pois é o mesmo que concatenar
+# vetores normalmente.
 
 ##### QUEST?O 5
 # N?o, no R n?o ir? ocorrer nenhum problema se criar um vetor at?mico com obejtos
