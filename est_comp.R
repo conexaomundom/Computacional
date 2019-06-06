@@ -2,60 +2,72 @@
 #
 # Exercicios propostos
 
-##### QUEST√O 1
-# O compilador e um interpretador.
+##### QUEST?O 1
+# O compilador e um interpretador, um compilador eh um programa de
+# computadorou mesmo um grupo de programas que √© respons√°vel por traduzir
+# um codigo fonte escrito em uma linguagem compilada a um programa 
+# equivalente do ponto de vista semantico. O compilador traduz o c√≥digo
+# fonto de uma linguagem de m√©dio/alto n√≠vel √°ra uma linguagem de progrma√ß√£o
+# de baixo n√≠vel. Alguns xompiladores traduzem o c√≥digo para um formato
+# intermedi√°rio, denominado de bytecode que √© um arquivo execut√°vel.
+# J√° interpretadores s√£o programas de computador que tem a finalidade
+# de ler o c√≥digo fonte de uma linguagem de programa√ß√£o interpretada e o
+# converte em um c√≥digo executavel, o interpretador porde ler
+# linha por linha e converter o c√≥digo fonte em c√≥digo objeto (ou bytecode)
+# a medida que vai executando o programa OOU o interpretador converte o 
+# codigo fonte por inteiro e depois o executa.
 # Compilado - C
 # Interpretado R.
 
-##### QUEST√O 2
+##### QUEST?O 2
 # 1.Integer, double, charactere, logical.
-# 2.Os principais tipos de dados da linguagem R s„o vetores, listas, data frame, matrizes.
+# 2.Os principais tipos de dados da linguagem R s?o vetores, listas, data frame, matrizes.
 # 3. 
 # 4.
 
-##### QUEST√O 3
-# Explicando o porque das saÌdas 
-# 1. Como pelo menos em uma das posiÁıes do vetor È double, ent„o todas as componentes
-# ser„o impressas em forma de n˙meros (double), pois double È mais flexivel do que inteiro
-# e do que logico, dizendo quem È x "x <- c(7.1, 2.3, 3L, TRUE)",
-# as duas primeiras saÌdas normal s„o double esperando que realmente saia,
-# exatamente o que foi posto, j· a terceira È o L denotando que 
-# o 3 ter· um espaÁo de um inteiro, porÈm como tem pelo menos um double,
-# e a quarta que o valor de TRUE È 1 e o valor de False È 0, como ser· expresso por
+##### QUEST?O 3
+# Explicando o porque das sa?das 
+# 1. Como pelo menos em uma das posi??es do vetor ? double, ent?o todas as componentes
+# ser?o impressas em forma de n?meros (double), pois double ? mais flexivel do que inteiro
+# e do que logico, dizendo quem ? x "x <- c(7.1, 2.3, 3L, TRUE)",
+# as duas primeiras sa?das normal s?o double esperando que realmente saia,
+# exatamente o que foi posto, j? a terceira ? o L denotando que 
+# o 3 ter? um espa?o de um inteiro, por?m como tem pelo menos um double,
+# e a quarta que o valor de TRUE ? 1 e o valor de False ? 0, como ser? expresso por
 # 1.0.
 
-# 2. Seguindo a mesma linha re raciocÌneo, y È um vetor com 4 posiÁıes, a primeira
-# posiÁ„o teÛricamente È um logico TRUE e a segunda, terceira e quarta posiÁ„o È a 
-# sequencia das trÍs primeiras letras do alfabeto, quando y È chamado, como a forma de
-# armazenamento de um vetor È homogÍneo ele vai trasnformar todas as posiÁıes 
-# para um ˙nico tipo de estrutura de dados e como caractere È o tipo de dado mais flexÌvel
-# e as tres letras do alfabetos s„o desse tipo, todo o vetor foi expesso como caracteres.
+# 2. Seguindo a mesma linha re racioc?neo, y ? um vetor com 4 posi??es, a primeira
+# posi??o te?ricamente ? um logico TRUE e a segunda, terceira e quarta posi??o ? a 
+# sequencia das tr?s primeiras letras do alfabeto, quando y ? chamado, como a forma de
+# armazenamento de um vetor ? homog?neo ele vai trasnformar todas as posi??es 
+# para um ?nico tipo de estrutura de dados e como caractere ? o tipo de dado mais flex?vel
+# e as tres letras do alfabetos s?o desse tipo, todo o vetor foi expesso como caracteres.
 
 # 3. Boa quaestion
 
-##### QUEST√O 4
+##### QUEST?O 4
 
-##### QUEST√O 5
-# N„o, no R n„o ir· ocorrer nenhum problema se criar um vetor atÙmico com obejtos
-# de tipos diferentes, como foi visto na quest„o 3,, como vetor È uma estrutura de
-# dados homogÍnea ele simplesmente ir· converter todos os objetos dentro do vetor
-# para um ˙nico tipo sendo ele o tipo mais flexÌvel. (caractere > double > integer > logical)
+##### QUEST?O 5
+# N?o, no R n?o ir? ocorrer nenhum problema se criar um vetor at?mico com obejtos
+# de tipos diferentes, como foi visto na quest?o 3,, como vetor ? uma estrutura de
+# dados homog?nea ele simplesmente ir? converter todos os objetos dentro do vetor
+# para um ?nico tipo sendo ele o tipo mais flex?vel. (caractere > double > integer > logical)
 
-##### QUEST√O 6
-# NA È um tipo de obejto retornado Not avaliable, ou quando h· valores faltantes na estrutura de dados,
-# NaN ou quando algumaoperaÁ„o n„o pode ser realizada como ao querer dividir algum 
-# numero por 0, ou tentar tirar a raiz quadrada de um n˙mero negativo, s„o operaÁıes
-# invalidas que retornar· a um NA. INCLUSIVE pesquisar Inf, e -Inf tambÈm vou pesquisar para responder melhor.
+##### QUEST?O 6
+# NA ? um tipo de obejto retornado Not avaliable, ou quando h? valores faltantes na estrutura de dados,
+# NaN ou quando algumaopera??o n?o pode ser realizada como ao querer dividir algum 
+# numero por 0, ou tentar tirar a raiz quadrada de um n?mero negativo, s?o opera??es
+# invalidas que retornar? a um NA. INCLUSIVE pesquisar Inf, e -Inf tamb?m vou pesquisar para responder melhor.
 
-##### QUEST√O 7
-# No vetor <- c(2, 7, 10, 8), o tipo de dados do objeto ser· double.
+##### QUEST?O 7
+# No vetor <- c(2, 7, 10, 8), o tipo de dados do objeto ser? double.
 vetor <- c(2,7,10,8)
 vetor_int <- as.integer(vetor)
 vetor_character <- as.character(vetor)
 vetor_logical <- as.logical(vetor)
 
-##### QUEST√O 8
+##### QUEST?O 8
 objects(grep("bas", search()))
-# AfunÁ„o "objects" como a funÁ„o ls ela lista objetos, retornando
+# Afun??o "objects" como a fun??o ls ela lista objetos, retornando
 # um vetor de strings e caracteres dando o nome de todos os objetos
 # 
