@@ -101,5 +101,23 @@ search()[(grep("gr", search()))]
 #???
 
 # Questao 10 --------------------------------------------------------------
+# Pegar "a" de l 
+l <- c(list(c(3,2), "a"), c(1,2))
+l[[2]]
 
+
+# Questao 11 --------------------------------------------------------------
+# Sabendo os níveis de flexibilidade dos tipos dedados.
+# charactere > double > integer >  logical
+c(1, FALSE)
+#[1] 1 0
+c("a", 1)
+#[1] "a" "1"
+c(list(1), "a")
+# [[1]]
+# [1] 1
+# [[2]]
+# [1] "a"
+c(TRUE, 1L)
+#[1] 1 1
 
