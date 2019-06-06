@@ -64,27 +64,42 @@
 # o mesmo que x <- c(1,2,3, 4); como criar um vetor normal, pois é o mesmo que concatenar
 # vetores normalmente.
 
-##### QUEST?O 5
+
+# Questão 5 ---------------------------------------------------------------
 # N?o, no R n?o ir? ocorrer nenhum problema se criar um vetor at?mico com obejtos
 # de tipos diferentes, como foi visto na quest?o 3,, como vetor ? uma estrutura de
 # dados homog?nea ele simplesmente ir? converter todos os objetos dentro do vetor
 # para um ?nico tipo sendo ele o tipo mais flex?vel. (caractere > double > integer > logical)
 
-##### QUEST?O 6
+# Questao 6 ---------------------------------------------------------------
+
 # NA ? um tipo de obejto retornado Not avaliable, ou quando h? valores faltantes na estrutura de dados,
 # NaN ou quando algumaopera??o n?o pode ser realizada como ao querer dividir algum 
 # numero por 0, ou tentar tirar a raiz quadrada de um n?mero negativo, s?o opera??es
 # invalidas que retornar? a um NA. INCLUSIVE pesquisar Inf, e -Inf tamb?m vou pesquisar para responder melhor.
 
-##### QUEST?O 7
+
+
+# Questao 7 ---------------------------------------------------------------
+
 # No vetor <- c(2, 7, 10, 8), o tipo de dados do objeto ser? double.
 vetor <- c(2,7,10,8)
 vetor_int <- as.integer(vetor)
 vetor_character <- as.character(vetor)
 vetor_logical <- as.logical(vetor)
 
-##### QUEST?O 8
+
+# Questão 8 ---------------------------------------------------------------
 objects(grep("bas", search()))
 # Afun??o "objects" como a fun??o ls ela lista objetos, retornando
 # um vetor de strings e caracteres dando o nome de todos os objetos
 # 
+
+
+# Questao 9 ---------------------------------------------------------------
+search()[(grep("gr", search()))]
+#???
+
+# Questao 10 --------------------------------------------------------------
+
+
