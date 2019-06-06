@@ -109,6 +109,8 @@ l[[2]]
 # Questao 11 --------------------------------------------------------------
 # Sabendo os níveis de flexibilidade dos tipos dedados.
 # charactere > double > integer >  logical
+
+# 1.
 c(1, FALSE)
 #[1] 1 0
 c("a", 1)
@@ -121,3 +123,9 @@ c(list(1), "a")
 c(TRUE, 1L)
 #[1] 1 1
 
+# 2.
+# Sim retornará TRUE porque o 1 será convetido para caractere.
+# 3.
+-1 < FALSE
+# SIm retornará TRUE por que "FALSE" é considerado como o valor O
+# então sim -1 é menor que 0.
