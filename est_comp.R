@@ -154,3 +154,19 @@ colnames(M) <- cnames
 rownames(M) <- NULL
 colnames(M) <- NULL
 
+
+# Questao 15 --------------------------------------------------------------
+v1 <- matrix(1:12, ncol = 4, nrow = 3)
+w1 <- matrix(1:8, ncol = 4, nrow = 2)
+
+M1 <- rbind(v1,w1)
+M1
+
+# Questao 16 --------------------------------------------------------------
+# Concatenando matrizes 
+v2 <- matrix(1:12, ncol = 2, nrow = 4)
+w2 <- matrix(1:12, ncol = 3, nrow = 4)
+
+M2 <- cbind(v2,w2)
+M2
+
