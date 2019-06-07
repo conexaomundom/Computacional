@@ -178,3 +178,14 @@ matrix(obj, 2, 2)
 # O que ha de interessante? QUe continua captando os diferentes tipos de
 # dados mesmo que a estrutura de dados matriz eh homogenea, então
 # nao houve a " transformação na estrutura das variaveis.
+
+
+# Questao 18 --------------------------------------------------------------
+
+nome_alunos <- outer("Aluno", 1:30, FUN = "paste", sep = "_")
+# ....
+
+
+#  Questao 19 -------------------------------------------------------------
+# QUando se aplica dim() a um vetor retorna NULL. Não sei explicar o porque.
+
