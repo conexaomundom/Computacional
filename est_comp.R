@@ -144,7 +144,11 @@ dim(vetor)[5]
 # Usando paste para nomear as 50 linhas da minha matriz
 lnames <- outer("l", 1:50, FUN = "paste", sep = "_")
 cnames <- outer("c", 1:50, FUN = "paste", sep = "_")
-ma <- matrix(1:2500, 50,50)
-rownames(ma) <- lnames
-colnames(ma) <- cnames
+M <- matrix(1:2500, 50,50)
+rownames(M) <- lnames
+colnames(M) <- cnames
+
+
+# Questao 14 --------------------------------------------------------------
+
 
