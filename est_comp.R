@@ -189,3 +189,17 @@ nome_alunos <- outer("Aluno", 1:30, FUN = "paste", sep = "_")
 #  Questao 19 -------------------------------------------------------------
 # QUando se aplica dim() a um vetor retorna NULL. Não sei explicar o porque.
 
+
+# Questao 20 --------------------------------------------------------------
+# Também retornara TRUE pq uma matriz é um array, um array é uma sequencia de 
+# matrizes.
+
+
+#  Questao 21 -------------------------------------------------------------
+x1 <- array(1:5, c(1, 1, 5))
+x2 <- array(1:5, c(1, 5, 1))
+x3 <- array(1:5, c(5, 1, 1))
+x1
+x2
+x3
+# Nao sei explicar a saida, sorry.
