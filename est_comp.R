@@ -124,8 +124,27 @@ c(TRUE, 1L)
 #[1] 1 1
 
 # 2.
+1 == "1"
 # Sim retornará TRUE porque o 1 será convetido para caractere.
 # 3.
 -1 < FALSE
 # SIm retornará TRUE por que "FALSE" é considerado como o valor O
 # então sim -1 é menor que 0.
+
+
+# Questao 12 --------------------------------------------------------------
+
+vetor <- 1:25
+matrix(vetor, 5,5)
+dim(vetor)[5]
+# ????
+
+
+# Questao 13 --------------------------------------------------------------
+# Usando paste para nomear as 50 linhas da minha matriz
+lnames <- outer("l", 1:50, FUN = "paste", sep = "_")
+cnames <- outer("c", 1:50, FUN = "paste", sep = "_")
+ma <- matrix(1:2500, 50,50)
+rownames(ma) <- lnames
+colnames(ma) <- cnames
+
