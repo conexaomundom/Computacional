@@ -150,5 +150,7 @@ colnames(M) <- cnames
 
 
 # Questao 14 --------------------------------------------------------------
-
+# Removendo os nomes das linhas e colunas.
+rownames(M) <- NULL
+colnames(M) <- NULL
 
