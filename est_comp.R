@@ -170,3 +170,11 @@ w2 <- matrix(1:12, ncol = 3, nrow = 4)
 M2 <- cbind(v2,w2)
 M2
 
+
+# Questao 17 --------------------------------------------------------------
+
+obj <- list(1:3, "a", TRUE, 1.0)
+matrix(obj, 2, 2)
+# O que ha de interessante? QUe continua captando os diferentes tipos de
+# dados mesmo que a estrutura de dados matriz eh homogenea, então
+# nao houve a " transformação na estrutura das variaveis.
