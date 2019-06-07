@@ -202,4 +202,29 @@ x3 <- array(1:5, c(5, 1, 1))
 x1
 x2
 x3
-# Nao sei explicar a saida, sorry.
+
+
+# Questao 22 --------------------------------------------------------------
+df <- data.frame(x = 1:3, y = c("a", "b", "c"))
+df$y
+# A estrutura de dados de df$y é um fator.
+# Para que df$y retorne um vetor atomico com elementos do tipo charactere
+# eh usar 
+as.character(df$y)
+
+
+# Questao 23 --------------------------------------------------------------
+data.frame(x = 1:3, y = list(c(1:2, 1:3, 1:4)))
+# não sei se essa era a ideia, só sei que corrigiu o erro. Pois bem.
+
+
+#  Questao 24 -------------------------------------------------------------
+notas <- list(c(7.1, 3.2, NA), c(2.7, 8.8, 10.0),
+              c(0.0, NA, NA), c(7.7, 8.4, 6.3),
+              c(3.6, 6.6, 8.1), c(NA, NA, NA),
+              c(7.4, 7.1, 7.3), c(10.0, NA, 7.0),
+              c(1.6, 3.2, 5.3), c(8.8, 9.2, 8.0))
+# 1. nomes aos elementos 
+alunos_names <- outer("Aluno", 1:10, FUN = "paste", sep = "_")
+dimnames(notas) <- alunos_names
+# Talvez possa usar um unlist algo do tipo, mas to meio assim.
