@@ -244,7 +244,28 @@ cat("i",i," = ",i, "\n", sep = "")
 # Questao 27 --------------------------------------------------------------
 #Imposto pago por homens e mulheres
 # homens pagam 15% e mulheres pagam 10%.
+valor <- 10000
+
+cat(valor, "o valor a ser pago de imposto é", valor * 0.15, 
+    " se vc for homem claro, mas se você for mulher será", valor * 0.1, ".")
 
 
+# Questao 28 --------------------------------------------------------------
+# Resolver a questão acima usando swhich
 
+# Homem, mulher, dinheiro = imposto
 
+imposto <- function(genero, valor){
+  
+  switch(genero, m = {
+    imposto = 0.15
+    cat("O imposto em cima do valor é", imposto*valor)
+  }, 
+  "f" = {
+    imposto = 0.1
+    cat("O imposto em cima do valor é", imposto*valor)
+  }
+  )
+  
+}
+imposto("m", 150)
