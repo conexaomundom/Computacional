@@ -282,3 +282,15 @@ tabuada <- function(numero, inicio, fim){
   
 }
 tabuada(7,1,5)
+
+
+# Questao 30 --------------------------------------------------------------
+# De graus celcius para fahrenheit
+
+cetofa <- function(C){
+  
+  F <- 1.8 * C + 32
+  F
+}
+cetofa(C = 32)
+cetofa(C = 40)
