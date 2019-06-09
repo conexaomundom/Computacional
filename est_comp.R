@@ -294,3 +294,23 @@ cetofa <- function(C){
 }
 cetofa(C = 32)
 cetofa(C = 40)
+
+
+# Questao 31 --------------------------------------------------------------
+# Temperaturas inapropriadas
+# eu usaria um breac if .... com um cat ou algo do tipo dizendo que esse valor
+# nao pode ser usado.
+
+
+# Questao 32. -------------------------------------------------------------
+
+cetofa <- function(temperatura, ceto = TRUE){
+  if(ceto == TRUE){
+  F <- 1.8 * temperatura + 32
+  F
+  }
+  else {C <- (temperatura - 32)/1.8
+  C
+  }
+}
+cetofa(32, ceto = FALSE)
