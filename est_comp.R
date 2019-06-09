@@ -228,3 +228,23 @@ notas <- list(c(7.1, 3.2, NA), c(2.7, 8.8, 10.0),
 alunos_names <- outer("Aluno", 1:10, FUN = "paste", sep = "_")
 dimnames(notas) <- alunos_names
 # Talvez possa usar um unlist algo do tipo, mas to meio assim.
+
+
+# Questao 25 --------------------------------------------------------------
+# T.T
+
+
+# Questao 26 --------------------------------------------------------------
+
+for(i in 1:7){
+cat("i",i," = ",i, "\n", sep = "")
+}
+
+
+# Questao 27 --------------------------------------------------------------
+#Imposto pago por homens e mulheres
+# homens pagam 15% e mulheres pagam 10%.
+
+
+
+
