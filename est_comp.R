@@ -269,3 +269,16 @@ imposto <- function(genero, valor){
   
 }
 imposto("m", 150)
+
+
+# Questao 29 --------------------------------------------------------------
+# Tabuada usando estruturas de repeticao
+
+tabuada <- function(numero, inicio, fim){
+  
+  for(i in inicio:fim){
+    cat(numero,"*",i, "=", numero * i, "\n")
+  }
+  
+}
+tabuada(7,1,5)
