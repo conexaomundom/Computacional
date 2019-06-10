@@ -302,7 +302,7 @@ cetofa(C = 40)
 # nao pode ser usado.
 
 
-# Questao 32. -------------------------------------------------------------
+# Questao 32 -------------------------------------------------------------
 
 cetofa <- function(temperatura, ceto = TRUE){
   if(ceto == TRUE){
@@ -314,3 +314,8 @@ cetofa <- function(temperatura, ceto = TRUE){
   }
 }
 cetofa(32, ceto = FALSE)
+
+
+# Questão 33 --------------------------------------------------------------
+
+
