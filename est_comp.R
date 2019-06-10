@@ -387,3 +387,8 @@ tempo1
 tempo2
 
 # Sem usar o loop o tempo computacional é muito menor.
+
+
+# Questao 37 --------------------------------------------------------------
+# Funcao central x, que retorna media aritmetica, geometrica e harmonica.
+
