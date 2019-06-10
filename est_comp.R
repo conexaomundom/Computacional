@@ -339,20 +339,51 @@ IMC(500, 1.55)
 # Questao 34 --------------------------------------------------------------
 
 vetor <- runif(n = 1e5, min = 0, max = 1)
-ve <- NULL
-const <- 0
+vec <- NULL
+vetor07 <- NULL
 for(i in 1:length(vetor)){
-  if(vetor[i] > 0.7) const <- vetor[i]
-  ve <- c(ve,const)
+  if(vetor[i] > 0.7) {vec <- vetor[i]
+  vetor07 <- c(vetor07,vec)
+  }
 }
-sum(ve)
+sum(vetor07)
 
 
 # Questao 35 --------------------------------------------------------------
 # Sem nenhuma instruçaõ de repeticao.
+vetor <- runif(n = 1e5, min = 0, max = 1)
+posicao <- which(vetor > 0.7)
+sum(vetor[posicao])
 
 
+# Questao 36 --------------------------------------------------------------
+# Tempo computacional
+t1 <- Sys.time()
 
+vetor <- runif(n = 1e5, min = 0, max = 1)
+vec <- NULL
+vetor07 <- NULL
 
+for(i in 1:length(vetor)){
+  if(vetor[i] > 0.7) {vec <- vetor[i]
+  vetor07 <- c(vetor07,vec)
+  }
+}
+sum(vetor07)
 
+t2 <- Sys.time()
+tempo1 <- t2 - t1
 
+# Sem nenhuma instruçaõ de repeticao.
+tt1 <- Sys.time()
+
+vetor <- runif(n = 1e5, min = 0, max = 1)
+posicao <- which(vetor > 0.7)
+sum(vetor[posicao])
+
+tt2 <- Sys.time()
+tempo2 <- tt2 - tt1
+tempo1
+tempo2
+
+# Sem usar o loop o tempo computacional é muito menor.
