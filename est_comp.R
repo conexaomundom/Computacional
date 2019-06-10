@@ -392,3 +392,59 @@ tempo2
 # Questao 37 --------------------------------------------------------------
 # Funcao central x, que retorna media aritmetica, geometrica e harmonica.
 
+central <- function(x){
+  
+  n <- length(x)
+  
+  # Media aritmetica.
+  x_barra <- sum(x)/n
+  
+  # Media geometrica.
+  G <- (prod(x))^(1/n)
+  
+  # Media harmonica.
+  H <- n/sum(1/x)
+  
+  return(c(x_barra,G,H))
+}
+x <- rnorm(100)
+central(x)
+
+
+# Questao 38 --------------------------------------------------------------
+myvar <- function(x, retorno){
+  
+  # Media aritmetica.
+  x_barra <- sum(x)/length(x)
+  
+  # Media geometrica.
+  G <- (prod(x))^(1/length(x))
+  
+  # Media harmonica.
+  H <- length(x)/sum(1/x)
+  
+  if(retorno == 1) return(x_barra)
+  if(retorno == 2) return(G)
+  if(retorno == 3) return(H)
+  if(retorno == 4) return(c(x_barra,G,H))
+  
+}
+
+
+# Questao 39 --------------------------------------------------------------
+disp <- function(x, retorno){
+  
+  A <- max(x) - min(x)
+  
+  S2 <- var(x)
+  
+  CV <- 100 * sd(x)/mean(x)
+  
+  if(retorno == 1) return(A)
+  if(retorno == 2) return(S2)
+  if(retorno == 3) return(CV)
+  if(retorno == 4) return(c(A,S2,CV))
+  
+}
+disp(rnorm(100),4)
+
