@@ -318,4 +318,41 @@ cetofa(32, ceto = FALSE)
 
 # Questão 33 --------------------------------------------------------------
 
+IMC <- function(peso, altura){
+  
+  if( peso < 0 | altura < 0) cat("Valor inconsistente")
+  else {
+    imc <- peso / (altura^2)
+  
+    if(imc < 17) cat("Seu IMC foi", imc, "e seu status é muito abaixo do peso. \n")
+    if(17 < imc & imc < 18.5) cat("Seu IMC foi", imc, "e seu status é abaixo do peso. \n")
+    if(18.5 <= imc & imc < 25) cat("Seu IMC foi", imc, "e seu status é de peso normal. \n")
+    if(25 <= imc & imc < 30) cat("Seu IMC foi", imc, "e seu status é acima do peso. \n")
+    if(30 <= imc & imc < 35) cat("Seu IMC foi", imc, "e seu status é Obesidade nível I. \n")
+    if(35 <= imc & imc < 40) cat("Seu IMC foi", imc, "e seu status é Obesidade nível II (severa). \n")
+    if(40 <= imc)  cat("Seu IMC foi", imc, "e seu status é Obesidade nível III (mórbida). \n")
+    }
+}
+IMC(500, 1.55)
+
+
+# Questao 34 --------------------------------------------------------------
+
+vetor <- runif(n = 1e5, min = 0, max = 1)
+ve <- NULL
+const <- 0
+for(i in 1:length(vetor)){
+  if(vetor[i] > 0.7) const <- vetor[i]
+  ve <- c(ve,const)
+}
+sum(ve)
+
+
+# Questao 35 --------------------------------------------------------------
+# Sem nenhuma instruçaõ de repeticao.
+
+
+
+
+
 
