@@ -433,7 +433,7 @@ myvar <- function(x, retorno){
 
 # Questao 39 --------------------------------------------------------------
 
-
+2
 
 
 # Questao 40--------------------------------------------------------------
@@ -453,3 +453,37 @@ disp <- function(x, retorno){
 }
 disp(rnorm(100),4)
 
+
+# Questao 41 --------------------------------------------------------------
+x <- rnorm(10)
+y <- rnorm(10)
+
+mycor <- function(x, y, pearson =  TRUE, rm.na = TRUE){
+  
+  if(length(x) != length(y)) stop("Os vetores possuem tamanhos diferentes.")
+  
+  # if(rm.na == TRUE){
+  #   for(i in 1:length(x)){
+  #   is.na(x)
+  #   is.na(y)
+  #   
+  #   allna <- c(nax, nay)
+  #   
+  #   x <- x[-allna]
+  #   y <- y[-allna]
+  #   
+  #   }
+  # }
+  
+  ifelse(pearson == TRUE, rho <- cor(x, y), rho <- cor(x, y, method = "spearman"))
+  
+  if(abs(rho) < 0.3) cat("O nível da correlação", rho, "é desprezível \n")
+  if(abs(rho) >= 0.3 & abs(rho) < 0.5) cat("O nível da correlação", rho, "é fraca \n")
+  if(abs(rho) >= 0.5 & abs(rho) < 0.7) cat("O nível da correlação", rho, "é moderada \n")
+  if(abs(rho) >= 0.7 & abs(rho) < 0.9) cat("O nível da correlação", rho, "é forte \n")
+  if(abs(rho) > 0.9) cat("O nível da correlação", rho, "é fortíssimo \n")
+}
+
+mycor(rnorm(10),rnorm(10))
+
+mycor(x, y)
