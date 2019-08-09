@@ -231,5 +231,77 @@ sum(1:5, NA, na.rm = TRUE)
 
 
 # Funcoes infixas -------------------------------------------------------------------------
+# TUDO O QUE EXISTE É UM OBEJTO
+# TUDO O QUE ACONTECE É UMA CHAMADA DE FUNCOES
+
+# EXEMPLO 
+x <- y <- 1
+
+'%+%' <- function(x, n){
+  rep(x, times = n)
+}
+
+# forma prefixa
+'%+%' ("infix", 4)
+
+"infix" %+% 4
+
+# Funcao de substituicao  -------------------------------------------------
+# funcoes de substituição sao tipo: names(), colnames(), rownames()
+
+vetor <- c(1,2,3)
+names(vetor) <- c("a", "b", "c")
+vetor
+
+'samenames<-' <- function(x, value){
+  
+  if(length(value) != 1) stop("imbecil")
+  else names(x) <- rep(value, times = length(x))
+  x
+}
+
+x <- 1L:10L
+samenames(x) <- "a"
+x
 
 
+# se desejarmos, podemos omitir algumas posições do vetor x.
+'samenames<-' <- function(x, rm.id = NULL, value){
+  
+  if(length(value) != 1) stop("Um vetor de comprimento 1 deverá ser passado")
+  else if(!is.null(rm.id) && is.numeric(rm.id)){
+    x <- x[-rm.id]
+    names(x) <- rep(value, times = length(x))
+  }else names(x) <- rep(value, times = length(x)) 
+  x 
+}
+
+x <- 1L:10L
+samenames(x) <- "A"
+
+x
+samenames(x, c(1,10)) <- "a"
+x
+
+
+
+# CLOSURES ----------------------------------------------------------------
+# Funcoes anonimas, fornecem menos ruidos visuaisno código nos livrando
+# de pensarmos em um bom nome para a funções.
+
+# lambda-calculus(um sistema formal na lógica matematica para representar 
+# a computação com base na abstração de funcoes)
+# closure: Uma funcão que encerra o seu ambiente, passando seus parametros 
+# para o ambiente  da função mais interna, função esta que retornada e que 
+# executará o trabalho desejado.
+
+potencia <- function(expoente){
+  #funcao anonima
+  function(x){
+    x ^ expoente
+  }
+}
+ quadrado <- potencia(2)
+ cubo <- potencia(3)
+quadrado(2) 
+quadrado(5)
