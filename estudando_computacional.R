@@ -198,7 +198,38 @@ myhist <- function(x = data, ...){
 myhist(x = data, col = rgb(1,0.9, 0.8), main = "", ylab = " freq",
        border = NA)
 
+#####
+
+f <- function(...){
+  
+  n <- ...length()
+  if(n != 3)
+    stop("A funcao deve ter exatamente 3 argumentos")
+  else
+    for(i in 1:...length()){
+      cat("O elemento ", i, " de \"...\" é: ", ...elt(i), "\n")
+    }
+  
+  return(..1 * ..2 + ..3)
+
+}
 
 
+f(2, 3, 1)
+## OBS:::: ...length() retorna o tamanho de ...
+# ...elt(i) equivale a funcao ..i. A funcao ...elt(i) nada pe mais do 
+# que fazer eval(paste("..", n))
+
+# O uso de funcoes varargs destacam-se também em situações em que
+# fazemos uso de programação orientada a objetos por funcao generica
+# sistema de orientação a objeto conhecido, em R como o sistema S3, 
+# de orientação a objeto 
+
+# Funcoes poliformicas - capacidade de uma funcao ter varias formas
+# e se adequar a cada uma delas. 
+sum(1:5, NA, na.rm = TRUE)
+
+
+# Funcoes infixas -------------------------------------------------------------------------
 
 
